@@ -26,7 +26,7 @@ docker run -d -p 5000:5000 --name flask-app flask-app:latest
 
 Jenkins Pipeline Stages
 
-![Jenkins Pipeline Run](Screenshot 2025-08-08 120137.png)
+![Jenkins Pipeline Run](image-pipeline.png)
 
 End of README
 
