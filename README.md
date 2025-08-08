@@ -14,19 +14,20 @@ This setup builds and runs a Flask app using Docker and Jenkins, triggered autom
 ---
 
 ## Docker Commands (explained)
-# Build the image from Dockerfile
+## Build the image from Dockerfile
 docker build -t flask-app:latest .
 
-# Stop and remove any existing container (ignore errors if none exist)
+## Stop and remove any existing container (ignore errors if none exist)
 docker stop flask-app || true
 docker rm flask-app || true
 
-# Run the container in detached mode, exposing Flask app on port 5000
+## Run the container in detached mode, exposing Flask app on port 5000
 docker run -d -p 5000:5000 --name flask-app flask-app:latest
 
-### Jenkins Pipeline Stages
+Jenkins Pipeline Stages
 
-Here's what a completed Jenkins pipeline run looks like:
+![Jenkins Pipeline Run](Screenshot 2025-08-08 120137.png)
 
-![Jenkins Pipeline Screenshot](Screenshot 2025-08-08 120137.png)
+End of README
+
 
