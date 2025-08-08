@@ -23,3 +23,10 @@ docker rm flask-app || true
 
 # Run the container in detached mode, exposing Flask app on port 5000
 docker run -d -p 5000:5000 --name flask-app flask-app:latest
+
+### Jenkins Pipeline Stages
+
+Here's what a completed Jenkins pipeline run looks like:
+
+![Jenkins Pipeline Screenshot](Screenshot 2025-08-08 120137.png)
+
